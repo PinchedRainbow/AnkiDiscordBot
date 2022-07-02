@@ -1,0 +1,110 @@
+﻿Program,A step by step description in a programming language of a process that achieves some useful result.
+Identifier,A unique name given to a variable  a constant  a procedure  a function  a program  etc.  There are rules for identifiers.  They must be unique; they must start with a letter; they can only contain letters  digits and the underscore character (no spaces). Identifiers should be meaningful so that the program is easier to understand.
+Integer (int),A whole number
+Real (double  single  etc),A number with a decimal point.
+char,A single letter  digit or symbol. (Character)
+string,A collection of characters (N.B. strings are essentially arrays of Char)
+Boolean (bool),Has a value of either True or False.
+DateTime,A date/time data type
+Byte,A byte is a group of 8 bits.  This data type can be used for storing positive integers up to 255.
+Variable,A location in memory that contains one or more data values.  Variables need to be declared using a declaration statement before they are used in a program. E.g. int num; string fullname;
+Assignment,An operation that assigns a value to a variable.  E.g.   num = 5;  
+(Named) Constant,A value that does not change throughout a program.  The use of named constants  rather than actual values  makes a program easier to understand and easier to maintain.  With named constants  if the value of the constant changes only the constant definition will need changing.  With actual values  the value will need changing everywhere it is used in the program.
+Concatenation,"The process of joining two strings together.  E.g. if n1=""Fred"" and n2=""Bloggs"" then n3=n1 + n2 will make n3 = ""FredBloggs"""
+Sequence,Consecutive steps or groups of steps processed one after another in the order that they arise.
+Selection,A decision-making step.   Allows alternative paths through a program to be taken. I.e.  if()   if()….else or switch…case
+Iteration/,A step or sequence of steps that are repeated until some condition is satisfied or while some condition is satisfied. 
+Definite Iteration,A loop that executes a predetermined number of times.  I.e. a for loop.  This type of loop is used when the number of times the loop is to be executed is known before the loop starts.
+Indefinite Iteration,A loop where the number of iterations is not known in advance but is determined by some condition.  The condition can either be tested at the start of the loop or at the end. I.e. a while loop or a do… while loop.
+Global Variable,A variable declared at the beginning of the program and accessible from anywhere in the program.  Global variables are best avoided where possible  especially in methods.   Not using global variables makes it possible to reuse the method in other programs and it makes sure that the method is self-contained. Avoiding global variables generally makes the program code more understandable. 
+Local Variable,A variable declared in a program block (method/subroutine) and accessible only within the program block.
+Parameter,A parameter is a variable which allows data items to be passed to and/or from functions and procedures.  They are placeholders for variables supplied at runtime.
+Routine Interface,The part of the routine that lists the parameters used to pass data into and out of the routine.  E.g.  static void example(string item  ref int position);
+Stack Frame,A stack is used to keep track of subroutine (method) calls.  Whenever a subroutine is called  the return address  the values of local variables and parameters are stored in the stack.  A stack frame is the area of memory used to store this information for one call.
+Recursion,When a subroutine calls itself.  I.e. within the definition of the subroutine  there is a call to itself.
+Base case,This the stopping condition for a recursive subroutine.  It stops the recursive calls allowing the subroutine calls to complete.
+General case,This is the case(s) that cause the recursive calls to happen.
+Text File,A sequence of printable or readable characters/ASCII values organised on a line-by-line basis and stored under the same name on backing storage.  Example of text files include HTML files and high-level language source code (e.g. .cs  .bas) Text files can be created  read and edited in any text editor.
+Record,A data structure that groups a number of variables – a collection of fields. In C# it is a struct.
+Binary File,Binary files store data as different data types.  Data is stored in the same way as stored in the memory of the computer  e.g. integers will be stored as integers not as characters.  The file will contain non-printable characters and so is not a type of text file. Data read from a binary file using a suitable program will not need to be converted from text into the data type required before processing.  Binary files using take up less storage than storing the same data in a text file.  The file can only be read using a specially written program which an make the data a little more secure.  
+Validation Check,A check made by a program to see that the data entered is reasonable.
+Range Check,A check to ensure that the input data is within a particular range of values.  E.g. hours worked in the range 0 - 60.
+Length Check,A check to ensure that a string value is of a particular length.  E.g. student ids are 8 characters long.
+Format Check,A check to ensure that the input data is in a particular format.  Input masks can be used to carry out this type of check.  E.g. date in the format DD/MM/YYYY
+Exception Handling,Code that is added to a program to stop it crashing if  for example  data of the incorrect type is entered.  In C#  try…catch or TryParse is used.  Usually the clause is included in a loop so that the user is given the opportunity to re-enter data.
+Valid Data,Test data that is acceptable.
+Erroneous Data,Test data that is not acceptable – i.e. invalid data.
+Boundary data,Test data which on the boundary  just within the boundary or just outside of being correct  or where different processing is done for different values.  E.g. if employees can work a maximum of 60 hours a week then 59  60 and 61 would be the boundary values for hours worked. If overtime is paid for any hours over 40 - then 39  40 and 41 would be boundary values.    
+Features of structured programming,Programs should use: Meaningful/appropriate/suitable identifiers; Subroutines / methods/modules which carry out one task; Subroutines/methods should use parameters to pass values; The programs should include structures such as selection and repetition statements. Goto statements should be avoided; Use of named constants;  Use of user-defined data types; Use of libraries;  Avoid global variables / use of local variables;
+Advantages of structured programming,Easier maintenance/upgradeable; can get an overview of system; Quicker to write/Easier development; can break problem down into sub tasks/ can re–use modules/ distribute among team; Fewer mistakes made; clear organisation of code; Quicker/easier to debug; easier to see where errors are; Fewer lines of code using subroutines; code not duplicated;
+Step-wise Refinement,The process of breaking a problem down through successive steps into smaller problems.
+Top-down design/,A method which breaks a problem into smaller problems which are easier to work on.
+Object-oriented programming,An object-oriented program is composed of a number of interacting objects  each of which has its own data and methods.
+Class,A class is a template for an object.  It defines the attributes and methods of objects in that class.
+Object,An object is an instance of a class.
+Instantiation,The process of creating an instance of a class (i.e. creating an object).  E.g.  Device printer = new Device();  will create a new object of type Device. An implicit or explicit constructor method can be used. 
+Encapsulation,The process of combining the data fields of a record with the procedures and functions that manipulate it to form a new data type (a class).  Encapsulation provides the ability to hide or isolate the internal components (data) and operations (methods) of an object  allowing the user only to communicate through the public interface. 
+Inheritance,When a subclass is defined based on a base class and the subclass shares properties and methods with the base class from which it is derived.  Subclasses are 'types of' the base class.  E.g. printers and computers are types of device.
+Polymorphism,Giving an action one name that is shared up and down a class hierarchy.  Each class in the hierarchy implements that action in a way appropriate to itself.
+Overriding,Overriding allows a method in a subclass to be defined with the same name and parameter list as one in the class from which it has been derived.  It will have additional or different code from the original method in the base class. 
+Aggregation,A 'has a' relationship in which one object contains another object.  When the container object is destroyed  the contained object will still exist.  Also  it is possible that the contained object may be shared with other container objects.  E.g. A computer science class contains students.  Students can belong to more than one class.  If the computer science class is destroyed  the students still exist.
+Composition,A 'has a' relationship in which one object contains another object.  When the container object is destroyed so is the contained object. It is not possible for the contained object to be shared with other container objects.  E.g. A house contains rooms. If the house is destroyed so are the rooms.
+Public  private  protected specifiers,A public attribute/method can be accessed anywhere.(+) A private attribute/method can only be accessed within its class.  This means that they cannot be accessed in methods defined in subclasses.(-) A protected attribute/method can be accessed within its class and by derived subclasses.  Making the attributes in the superclass protected makes them accessible to the methods defined in the subclass. (#)
+Static data structure,A data structure that has a fixed size.  I.e. once created  its size does not change whilst the program is being executed. Static data structures typically store data in consecutive memory locations.  E.g. arrays are static structures.  Static data structures can waste memory if the number of data items stored is small relative to the size of the structure.
+Dynamic data structure,The size of a dynamic data structure can change whilst the program is being executed.  They only take up as much memory as is required  however they require memory to store pointers to the next items.
+Queue,A data structure where new items are added to one end and removed from the other end.  (First In First Out).  They are often implemented as a 'circular' structure.  Priority queues are special queues where the position of a data item in the queue depends on some measure of priority.  Items within the queue that are of the same priority will be removed using FIFO rule.  
+Stack,A data structure where data items are added and removed from the same point i.e. the top of the stack. (First In Last Out) pop – remove the item at the top of the stack push – push a new item onto the stack peek – look at the item at the top of the stack without removing it.
+Graph,A structure whereby nodes(vertices) are connected by edges(arcs) which represent some relationship between the nodes.  E.g. Towns connected by roads.
+Connected graph,A graph where it is possible to go from any node to any other node by following the edges.
+Tree,A tree is a connected  undirected graph that has no cycles (loops).
+Rooted Tree,A tree where one node has been designated as the root (starting point).  It has parent-child relationship between the nodes.  The root is the only node with a parent.
+Binary Tree,A rooted tree where each node has at most two children.  A common application is a binary search tree.
+Hash Table,A structure that creates a mapping between keys and values.  To add an item to the table  a hashing algorithm is applied to a key to give an address to a location in the table.  The location at that address is accessed and if it is empty the key and values are stored there.  If the location is not empty  a collision has occurred. This can be resolved by sequentially searching through the table  starting at the address generated  until an empty location is found.  The item is then placed there.  If the end of the table is reached before finding an empty slot  the search continues from the start of the table.
+Dictionary,A collection of key-value pairs in which the value is accessed via an associated key.  (Note: a dictionary can be implemented using a hash table)  The value can be a single data value  an entire record or any other data type or data structure including another dictionary!
+Vector,A vector usually represents a geometric point in space and can be represented as a list of numbers  a dictionary  a 1-dim array  etc.
+Breadth First,Used for finding the shortest path for an unweighted graph.
+Depth First,Used for navigating a path though a maze.
+Pre order traversal,Used for copying the contents of a tree.
+In order traversal,Used outputting the contents of a binary search tree in order.
+Post order traversal,Used for Infix to RPN conversions 
+Reverse Polish (RPN)/Post-fix,A method of representing expressions where the operator is given after the operands rather than in between them (in fix).
+Linear Search Complexity,Time complexity O(n)
+Binary Search Complexity,Time complexity (log n)
+Bubble sort Complexity,Time complexity O(n2)
+Merge sort Complexity,Time complexity O(n log n)
+Dijkstra's shortest path,A method of finding the shortest path between two nodes in a weighted graph. The algorithm finds the shortest distance and the path of the nodes visited in the shortest route.
+Algorithm,A sequence of steps that can be followed to perform a task and which always terminates.
+Representational abstraction,A representation that is arrived at by removing unnecessary details.
+Abstraction by generalisation or categorisation,A grouping by common characteristics to arrive at a hierarchical relationship of the 'is a kind of' type.
+Information hiding,The process of hiding all details of an object that do not contribute to its essential characteristics.
+Procedural abstraction,The result of abstracting away actual values used in any particular computation to end up with a computational pattern (generic method) – i.e. a procedure
+Functional Abstraction,A functional abstraction takes procedural abstraction one step further in that the actual method of computation is hidden.  
+Data abstraction,A methodology that enables how an object is used to be isolated from how the object is constructed.  E.g. most cars can be driven (used) in the same way even though they may be constructed very differently.
+Problem abstraction/reduction,Details are removed until the problem is represented in a way that it is possible to solver because the problem reduces to one that has already been solved.
+Decomposition,Breaking a problem into a number of sub-problems  so that each sub-problem accomplishes an identifiable task  which might be further sub-divided.
+Composition,Combining procedures/subroutines to form complex procedures.
+Automation,Putting models into action to solve problems.
+Finite state machine,A machine that consists of a fixed set of possible states with a set of allowable inputs that change the state and a set of possible outputs.
+Accepting State,If after running through the inputs for a finite machine the machine ends up in this state  the input is accepted – i.e. it is valid.  The accepting state is indicated using a double ring.
+State Transition Diagram,A way of describing a finite state machine graphically.  Each state is represented by a circle and each transition by an arrow labelled with the input that causes the transition plus any output resulting from the transition.
+State Transition Table,A table which shows the effect on the current state of a finite state machine of particular inputs and any corresponding output.
+Set,An unordered collection of values in which each value occurs at most once.
+Finite set,A set whose elements can be counted off by natural numbers up to a particular number.
+Infinite set,A set with an infinite number of elements.  E.g. set of natural numbers  set of real numbers.
+Countable set,A countable set is a set with the same cardinality (number of elements) as some subset of the set of natural numbers.  
+Countably infinite set,A infinite set where the elements can be counted off by natural numbers.
+Set cardinality,The cardinality of a set is the number of elements in the set.
+Cartesian Product,If A ={a  b} and B={1 2 3} the cartesian product of A and B = {(a 1)  (a 2)  (a 3)  (b 1)  (b 2)  (b 3)}
+Subset/Proper subset,A is a subset of B if every element in A is also in B.  A is a proper subset of B if every element in A is also in B but there is a least one element in B that is not in A.
+Regular expressions,A way of describing a set and which allows particular types of language to be described in short-hand.
+Regular language,A regular language is any language that can be represented by a regular expression and that an FSM will accept.
+Backus-Naur Form,A more flexible way of representing the rules of syntax of a language.
+Big O notation,A way of expressing the time complexity of algorithms.
+Tractable problems,A tractable problem is a problem that has a polynomial or less time solution.
+Intractable problems,An intractable problem is solvable but doesn't have a polynomial or less time solution.  It is solvable but the time taken to solve it is impractical for all but the smallest inputs.
+Computable and non-computable problems,Computable problems can be solved algorithmically  non-computable problems can't.
+Halting problem,"""Is it possible to write a program that can take any other program and its data as input  and tell  without running the input program  whether or not it will terminate.""  The answer is no.  It shows that not all problems are computable/solvable."
+Turing machines,A 'machine' containing a finite set of states in a state transition diagram  a finite alphabet of symbols  an infinite tape with marked off square and a read-write head that can travel along the tape one square at a time.  Any program run a computer can be expressed as a Turing machine. They define what is computable.
+Universal Turing Machine (UTM),A  Universal Turing machine (UTM) is a Turing machine that can execute other Turing machines by simulating the behaviour of any Turing machine.  It faithfully executes operations on the data precisely as the simulated Turing machine does.
+UTM behavess,A UTM behaves like an interpreter – it works its way through a set of instructions identifying the next instruction then executing it.
+Consequence ofs,A consequence of a UTM is that programs and data are really the same thing.  A program is just a sequence of symbols that looks like any other piece of input  but when fed into a UTM  this input wakes up and begins to compute.

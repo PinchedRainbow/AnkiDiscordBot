@@ -1,0 +1,360 @@
+﻿Natural Number,Any positive whole number that is greater than or equal to 0.,
+Integer,Any whole number. The set of integers includes the set of natural numbers.,
+Rational Number,Any number that can be represented as a fraction in the form n/m where n is an integer and m is an integer other than 0. The set of rational numbers contains the set of integers.,
+Irrational Number,Any number that cannot be represented as an exact fraction. E.g. Ö3,
+Real number,The set of real numbers is the set of all possible real world quantities. It includes the sets of natural numbers integers rational and irrational numbers. In programming any number that may have a decimal place is classed as real.,
+Ordinal Number,An ordinal number describes the position of an object. E.g. first second etc.,
+Decimal,Base ten.,
+Binary,"A number system that uses two digits 0 and 1. E.g. 
+    128
+    64
+    32
+    16
+    8
+    4
+    2
+         
+    = 3210 + 1610 + 210 +110 = 5110
+ 
+    
+ 1
+      0
+    0
+    1
+    1
+    0
+    0
+    1
+    1",
+Hexadecimal,"A number system that uses sixteen digits 010 to 910 and A16 to F16. A16=1010 B16=1110 etc.
+ Hexadecimal is used as shorthand for binary because each hexadecimal digit converts to exactly 4 binary digits. This makes it easier for people to read than binary. 
+ 2B16 in hex = 0010 10112 in binary = (210*1610 + 1110) = 4310 in decimal",
+Bit,A bit is a single binary digit - a 0 or a 1.,
+Byte,A byte is a group of 8 bits.,
+Word,A group of bytes.,
+Unsigned Binary,This is a 'normal' binary integer. (See binary),
+Two's Complement,#ERROR!,
+Fixed Point,#ERROR!,
+Floating Point,A way of representing real numbers in binary which is type of standard form. The floating points number comprises a mantissa and an exponent. The mantissa represents the significant figures of the number and the exponent is the power of two by which the mantissa is multiplied.,
+Mantissa,The significant figures of a floating point number. For this syllabus it will be in two's complement format. It has a value between ½ and 1 or -1/2 and -1. I.e. positive numbers must start 0.1 and negative numbers must start 1.0.,
+Exponent,The power of two by which the mantissa is multiplied. It will be a two's complement integer.,
+Normalisation,Getting a floating point number into the correct format so that if positive the mantissa starts 0.1 and if negative it starts 1.0. Normalisation is carried out to ensure maximum precision using the given number of bits (maximum number of significant figures are stored) and to ensure there is only one way of representing a number.,
+Absolute Error,Absolute error = actual value - value stored,
+Relative Error,Relative error = Absolute error / actual value,
+Overflow error,An error which occurs when the result of a calculation is too large to be stored in the available number of bits. Can occur when multiplying large numbers or when dividing a large number by a small fraction.,
+Underflow error,An error which occurs when the result of a calculation is too small to be stored in the available number of bits. Can occur when multiplying two small fractions or when dividing a small fraction by a large number.,
+Cancellation Error,An error which can occur when adding or subtracting a very large number and a very small number.,
+Kilobyte,A kilobyte (KB) = 103 =1000 bytes,
+Kibibyte,A kibibyte (KiB) is 210 = 1024 bytes,
+Megabyte,A megabyte (MB) = 106 = 1 000 000 bytes,
+Mebibyte,A mebibyte (MiB) = 220 = 1024 x 1024 bytes (= 1024 Kibibytes),
+Gigabyte,A gigabyte (GB) is 109 = 1 000 000 000 bytes,
+Gibibyte,A gibibyte(GiB) is 230 = 1024 x 1024 x 1024 bytes (= 1024 mebibytes),
+Terabyte,A terabyte (TB) is 1012 = 1 000 000 000 000 bytes,
+Tebibyte,A tebibyte (TiB) is 240 = 1024 x 1024 x 1024 x 1024 bytes (= 1024 gibibytes),
+Character Code,A character code is a system where a fixed number of bits is used to represent characters and where each different character is represented by a unique (binary) number.,
+ASCII,American Standard Code for Information Interchange. A way of representing characters using groups of bits. ASCII uses 7 bits for each character which means that 128 (27) characters can be represented. Extended ASCII uses 8 bits (1 byte).,
+Unicode,Another character coding method based on ASCII which uses at least 16 bits (2 bytes) to represent each character. It was introduced to allow more characters to be represented to allow more languages to be represented using one character set and to ensure that each character has a unique representation.,
+Parity,"A checking method for ensuring data has been transmitted correctly. The sender attaches an additional bit to each byte called a parity bit. 
+ For even parity the parity bit is set to zero or one so that the total number of ones in the byte including the parity bit is an even number. When the data is received the receiver recalculates the parity. If the number of ones is now odd the receiver will request that the data is retransmitted. If the number of ones is even it is assumed that the data is correct although an even number of errors could have occurred.
+ Odd parity works the same way accept that the number of ones should be an odd number.",
+Parity Bit,A bit attached to a group of bits and which is set to zero (off) or one (on) so that the total number of ones in the byte including the parity bit is an even number for even parity. The number of ones in the byte should be odd for odd parity.,
+Majority Vote,An error detection and correction method where each bit is sent three (or any odd number >1) times. When the bit pattern is received majority vote is used to determine the value of each bit.,
+Check Digit,This is an extra digit which is calculated from the original digits in the field. This digit is attached to the original number and is input as part of the number. It is then used to check the validity of the number. In this way the field becomes self-checking.,
+Check sum,A checksum is a number which is attached to the end of a block of data and used for error detection and correction.,
+Bitmap,Created when the pixels of an image are mapped to positions in memory that store binary codes representing the colour of each pixel.,
+Colour Depth,The number of bits used to represent the colour of a single pixel in a bitmapped image.,
+Pixel,The smallest addressable area or the smallest solid block of colour in an image.,
+Resolution of a VDU screen/Image,"The number of dots or pixels per inch or centimetre
+ (or the width in pixels by the height in pixels - i.e. the size of the image.)",
+File size of an image,File size of an image in bytes = width in pixels x height in pixels x colour depth / 8,
+Metadata for an image,The metadata stored for a bitmapped image are the additional data (other than the pixel data) that is stored about the image. The metadata includes the width and height of the image the colour depth whether or not the file is compressed. If the image is a photo it may also include date/time taken GPS coordinates etc.,
+Vector Graphic,A method of storing images which records geometric and other information about the objects that make up the image. I.e. a vector graphic identifies the objects that make up the image such as the lines arcs curves circles rectangles etc and records the properties of these objects (such as line colour line width etc) to define the image.,
+Vector Graphics vs Bitmaps,"Vector graphic images can be enlarged without distortion whereas bit-mapped images distort. 
+ It is easier to edit individual objects in vector graphic image.
+ Generally images stored as vector graphics require fewer bytes than bitmaps. This means they take less storage space load faster from secondary storage and download faster from the Internet. Images that have continuous areas of colour take up fewer bytes in bitmapped format than in vector format. Photographs are not suitable for storing as a vector graphic.",
+Analogue Data,Data that varies in a continuous manner e.g. sound temperature pressure etc.,
+Analogue Signal,An electrical signal that varies in a continuous manner.,
+Digital Data,Data that takes the form of discrete values.,
+Digital Signal,An electrical signal with voltage changes that are abrupt or in discrete steps.,
+ADC,"Analogue to Digital converter - converts an analogue signal into an equivalent digital signal.
+ The ADC works as follows;
+ Ø It samples the analogue signal at fixed regular intervals (using sample and hold circuitry) to produce a digital signal (known as PAM signal).
+ Ø When the sample is taken the amplitude of the signal is measured.
+ Ø The sample measurements are quantised i.e. the height of each sample is approximated to an integer value. Each integer value is encoded as a binary value using a fixed number of bits. 
+ Ø The binary values are output as digital signals known as PCM signals.",
+Sampling Rate,This is the number of samples taken per second and is given in Hertz or Kilohertz. 1 Hertz means 1 sample per second. 1 kilohertz means 1000 samples per second.,
+Sampling Resolution,This is the number of bits used to store each sample.,
+Nyquist's Theorem,This theorem states that the minimum sampling rate should be at least double the highest frequency in the analogue signal.,
+File size of a sampled signal (e.g. sound),"File size in bytes
+ = Sampling Resolution x Sampling Rate x Time over which sample taken in seconds/8
+ E.g. if a sound signal is sampled at a rate of 2000 Hz using a sampling resolution of 16 bits for 20 seconds the file size would be calculated as follows:
+ File size in bytes = 2000 x 16 x 20 /8",
+DAC,Digital to Analogue converter - converts a digital signal into an approximately equivalent analogue signal. Because digital signals have a 'staircase-like' appearance because of the discrete values used the DAC will apply 'smoothing' to the analogue signal before it is output.,
+MIDI,"Musical Information Digital Interface - is a hardware/software protocol which enables electronic instruments and other digital musical devices to communicate with each other using the same set of codes and numbers.
+ MIDI data contains a list of events messages that tell an electronic device how to generate a certain sound. E.g. when to play a note when to stop playing a note what pitch a note is control signals for parameters such as: volume vibrato and clock signals that set and synchronize tempo between multiple devices. 
+ Note: 
+ MIDI files tend to be smaller than the equivalent sampled file.  It is easy to edit notes and change instruments. A musical score can be generated directly from a MIDI file. With sampling some data about the notes is lost. This is not the case with MIDI.",
+Data Compression,A method whereby data is squeezed into a smaller number of bytes that the data would occupy if uncompressed. There are two basic types of compression: - lossless compression and lossy compression.,
+Lossy Compression,Lossy compression methods discard information which is not considered important e.g. background scenery is saved with reduced resolution. Data is lost from the original. With this method data is lost. When the file is decompressed the original data cannot be restored. Lossy compression should not be used when it is important that all the original data can be restored. E.g. text files and executable files.,
+Lossless Compression,With lossless compression decompressing the image produces the original image exactly. Run-length encoding and dictionary methods are two examples of such techniques.,
+Run-length encoding,"This is a simple compression method that takes account of the fact that some files (especially images) have long runs of identical data - e.g. pixels of the same colour. Consecutive data items (pixels) are compared. If 3 or more data items contain the same bit pattern (i.e. store the same colour) this information is encoded in 2 bytes. The first byte stores the number of consecutive bytes storing the same colour and the second byte stores the colour code.
+ Note: there will needs to be some method of differing between the counts and the data.",
+Dictionary Compression methods,These methods use algorithms which substitute phrases in a text with references that link to that phrase in a dictionary. The references take up less memory than the phrases they replace which reduces the size of the file but the dictionary also needs to be stored.,
+Encryption,The conversion of data or a message into a form that cannot be understood by another party who does not have the means to decrypt it. Using an algorithm and a key to convert message data into a form that is not understandable without that key.,
+Plaintext,The original unencrypted message.,
+Ciphertext,The encrypted message.,
+Decryption,The process of converting ciphertext back into plaintext.,
+Caesar Cipher,An encryption method where each letter is replaced with another letter which is a set number of letters further on in the alphabet. This method is not very secure and is quite easy to break using either brute force because there are only 25 possible keys or by letter frequency analysis because each letter is shifted by the same amount.,
+Brute force,Trying every possible solution until one that works is found.,
+Letter frequency analysis,In most languages certain letters occur more frequently than others. By looking at the frequency of letters in the ciphertext it can be determined what substitution has been made.,
+One-time pad,"A method where each letter or character in the plaintext is encrypted using a random different key. The combination of keys used to encrypt the message is used once only. In terms of a Caesar type cipher each letter in the plaintext will be shifted by a different amount.
+ Using a one-time pad means that each letter in the ciphertext text is equally likely to occur making breaking the cipher by brute force and letter frequency analysis much less likely.",
+Vernam Cipher,A method where each character is encrypted by XORing the 8 bits used to represent the character with a different 8 bit number. This is a type of one-time pad. Vernam ciphers provide perfect security as long as the key is truly random and is used only once.,
+Perfect security,A cryptosystem has perfect security if each bit of the ciphertext tells a potential eavesdropper nothing about the corresponding bit in the plaintext and nothing about the other bits in the plaintext.,
+Computational Security,An encryption method is said to have computational security if it is safe to assume that no known attack can break it without unlimited computing resources and in a practical amount of time.,
+Hardware,,The physical electronic components of a computer system.
+Software,,The programs designed to execute on the hardware. Sequences of instructions which execute on the hardware to perform some task.
+System Software,,Programs designed to operate and manage the hardware.
+Application Software,,Programs designed to enable the user to perform real-life/non-computer tasks.
+Operating System,,Programs designed to manage hardware resources in order to provide a controlled allocation of the processors memories and I/O devices among the various programs competing for them and manage the storage of data.  It hides the complexities of the hardware from the user.
+Utility Program,,A utility program is a systems program designed to perform a very specific common task related to working with computers. The tasks that utility programs are designed to preform are often referred to as 'housekeeping' tasks. Examples include: Disk Formatter File Copying Program Backup Program.
+Library Program,,"A library program is a pre-written pre-compiled program or routine which can be incorporated into another program. A program library is a collection of compiled routines that other programs can use. Using library routines saves the programmer time writing programs because the routines have already been written compiled and tested. They also cut down the amount of code that needs to be written.
+ Dynamic Linked Libraries (DLLs) are executable routines that are shared by several applications. They are loaded when needed and unloaded when finished with. This saves memory."
+Translator,,A translation program converts a computer program into a form that can be run on a computer i.e. binary machine code. There are three types of program which carry out this task: Assemblers Compilers and Interpreters
+Low-level Language,,Machine code and assembly languages are called low-level languages because the instruction set they use is based on the actual instruction set of the particular computer. For this reason they are sometimes referred to as machine-oriented languages.
+Machine Code,,"Machine Code is the only program code that the computer can execute directly. The instructions and data are written in binary code. Each type of processor has its own machine code because different processors have different components and registers.
+ Note sometimes the programs are written or displayed in hexadecimal as each hex digit is equal to 4 bits which mean that instructions can be displayed in fewer digits and so are easier to read and understand. 
+ Machine code programs tend to be long and time-consuming to enter into the computer. They were difficult to debug."
+Assembly Language,,"An assembly language uses the same structure and instruction set as the machine code it is based on but it uses mnemonics instead of numbers to represent instructions and can use symbolic names to represent memory addresses. An assembly language program must be translated into machine code using an assembler before it can be executed. 
+ Each assembly language instruction is translated into one machine code instruction. 
+ Each type of processor has its own assembly language – as they have their own machine code. An assembly language program written for a computer with a particular processor is unlikely to work on a computer with a different type of processor.
+ Programmers still use assembly language rather than a high-level language when fast execution of the program is essential or when they need to perform an operation that isn’t possible in a high-level language such as directly accessing registers.
+ Good assembly language programmers can write code which takes up less memory space than the equivalent high-level language program."
+High-level Programming Language,,A language that has English-like keywords and commands to express the basic constructs of sequence selection and iteration (repetition). Each instruction in a high-level language converts to several machine code instructions which means the programs are generally shorter. High-level languages are problem-oriented - designed for particular problem areas. They are portable - can be used on any machine with a suitable interpreter/complier. They are easier to learn than low-level languages. The programs are easier to understand and debug.
+Imperative,,The order in which instructions are executed is determined by the programmer.
+Assembler,,An assembler program converts an assembly language source program into a machine code object program.
+Complier,,"A complier converts a high-level language source program into a machine code object program. Once the program has been compiled it can be run without needing the compiler. The compiled program will be able to be executed on any compatible machine. 
+ Compiled programs will generally execute faster than the equivalent interpreted program because it is in a form that can be executed directly. Manufacturers generally distribute their programs in compiled form because it protects the source code."
+Interpreter,,"An interpreter works its way through the instructions of the source code program analysing the instruction and running routine(s) to execute it before moving on to the next instruction.
+ It does not produce an executable object program. If using an interpreter the program will need to be re-interpreted every time it is executed. This means the interpreter will need to be installed on the computer running the program"
+Source code,,The original program code that has not been converted into an executable program. it is the input to a compiler or assembler.
+Object code,,The converted executable code. It is the output from a compiler or assembler.
+Intermediate language e.g. Bytecode,,"Some compilers do not convert the source program into an executable object program but they convert the source program into an intermediate code program instead. This intermediate code program cannot be executed directly but needs to be either interpreted by a virtual machine or compiled just before execution. 
+ Advantages: The same bytecode file can be interpreted on different types of machine. Using bytecode acts as a buffer between the computer and the program.  Bytecode is much simpler than a typical high level language and so it is much easier to write a bytecode interpreter for a new type of computer than it is to write a full compiler."
+AND Function,,The output is true if all the inputs are true. E.g. Q = A . B Q will equal 1 if both A and B are 1.
+OR Function,,"The output is true (1) if either or both inputs are true (1). 
+ E.g. Q = A + B  Q  will equal 1 if either A or B is 1."
+NOT Function,,The output is the reverse of the input. E.g. Q = A  Q will equal 1 if A is 0 and Q will equal 0 if A is 1.
+Exclusive OR function,,"The output if true if either of the inputs is true but not if both inputs are true. I.e. the output is true if the inputs are different. 
+ E.g. Q = A Å B 
+ Q will equal 1 if A is 1 and B is 0 or if A is 0 and B is 1."
+NAND function,,"This is the equivalent of an AND followed by a NOT. The output is true if any input is false. 
+ E.g. Q = A . B  Q will equal 1 if A is 0 or B is 0. Q is 0 when both A and B are 1."
+NOR Function,,"This is the equivalent of an OR followed by a NOT. The output is true when both the inputs are false. 
+ E.g. Q = A + B  Q will equal 1 if both A and B are 0. Q is 0 if either A or B is 1."
+Boolean Equation,,An equation that expresses a Boolean output Q in terms of Boolean inputs X Y Z etc to which one or more Boolean functions are applied.
+Boolean Identities,,"A.A = A  A . A = 0  1 + A = 1  0 + A = A  1.A = A 
+ 0.A = 0  A + A = 1  A.B = B.A  A + B = B + A 
+ A + A.B = A A.(A + B) = A (A+B)+C = A+(B+C)"
+De Morgan's Laws,,"De Morgan's Laws are used to change AND to OR and OR to AND.
+  A . B = A + B  A + B = A . B
+ or A . B = A + B  A + B = A . B"
+Half-adder,,A logic circuit used to add two bits to give the correct sum and carry. You need to know how to construct this circuit.
+Full-adder,,A logic circuit used to add two bits taking into account the previous carry. It has three inputs. The inputs are the two bits to be added and the carry bit from the previous addition - usually called Carry In (Cin). The outputs are the sum and the carry out (Cout). It is constructed using two half-adders.
+Edge-triggered D-type flip-flop,,"This circuit is a fundamental building block of all hardware devices that computers use to maintain state (i.e. memory). This includes single memory cells registers and large RAM units.
+ They hold the value of a single bit. There are two inputs the data and a clock signal. The clock signal is used as a trigger to update the output to reflect the current state of input."
+Processor,,The processor is the brain of the system. It is responsible for executing programs and supervising the functioning of the other parts of the system.
+Main Memory,,This is the memory that is directly addressable by the processor. Its size is limited by the size of the address bus.
+Bus,,A set of parallel wires that are used to connect together the components inside the computer.
+Bus Width,,The number of signal wires or lines allocated to the bus. The signal on an individual line represents one bit. The more wires in the bus the more bits can be transmitted.
+Address bus,,"A one- way (unidirectional) bus typically consisting of 32 wires used to transfer memory addresses from the processor to the other components in the CPU. 
+ The more wires in the address bus the more memory can be addressed. E.g. 8 wires in the address bus would allow 256 (28) different locations to be addressed with addresses 0 to 255."
+Data Bus,,"A mostly two-way (bidirectional) bus typically consisting of 32 wires for transferring data between the various system components. The data bus is one-way from input controllers to the other components and is one-way into output controllers from the other components. 
+ The width of the data bus is a key factor in determining overall system performance. 
+ A wider (more wires) data bus means that more data can be transferred simultaneously."
+Control bus,,"A two-way (bidirectional) bus used to transmit command timing and specific status information to and from system components. 
+ Examples of control signals include: 
+ Clock Signals - for timing purposes 
+ Reset Signal - used to initialise components 
+ Memory Read - used to assert that the memory location currently in use is being read from Memory Write - used to assert that the memory location currently in use is being written to."
+I/O controller,,An electronic circuit that connects to a system bus and an I/O device it provides the correct voltages and currents for the system bus and the I/O device.
+Von Neumann Architecture,,"In von Neumann architecture the program instructions and the data are stored in the same memory and hence use the same address and data buses. This means that when a program is executed the instruction is fetched and then any data needed by the instruction is fetched (or stored) before the next instruction can be fetched. This creates a bottleneck. 
+ Also having data and instructions stored in the same memory allows the possibility that data can be executed as code which a method that can be exploited by hackers."
+Harvard Architecture,,"In a Harvard machine there are separate memories for the data and the program instructions. So whilst the data is being fetched for one instruction the next instruction can be fetched at the same time. This avoids the bottleneck of having single data and address buses and reduces delays in waiting for memory fetches. 
+ Having 2 separate memories means that the locations in each memory can store different numbers of bits allowing for different word length for instructions and data. The 2 memories can be different sizes and the address lengths can differ. Different technologies can be used to implement the different memories. For example in some embedded systems the instruction memory is ROM. The possibility of data being executed as code is no longer an issue.
+ But the sizes of the two memories have to be decided in advance which makes Harvard machines less flexible.  The control unit has to deal with more buses which makes it more complex and hence more expensive.
+ Harvard architecture is widely used on embedded computer systems for digital signals processing (DSP) and microcontrollers that are used in automatically controlled devices such as car engine control systems mobile communications systems image processing systems household appliances burglar alarms etc."
+Stored program concept,,This is the concept that a program must be resident in the main memory of the computer to be executed. When the program is executed the machine code instructions are fetched from the main memory decoded and executed one at a time in sequence. The program in memory may be replaced by another at any time.
+Arithmetic and Logic Unit (ALU),,The part of the processor that performs arithmetic and logical operations on data such as addition and subtraction and Boolean logic such as AND OR etc.
+Control Unit,,The control unit is the part of the processor that supervises the activities of the CPU. It fetches program instructions from memory decodes them and executes them one at a time. It makes sure that the data being processed arrive at the correct place at the correct time.
+Clock,,The clock supplies a timing signal at a fixed rate which is used to regulate the rate at which instructions are executed and to synchronise the operation of various computer components.
+Clock Speed,,The clock speed of a processor is the frequency at which the processor executes instructions. It is measured in Megahertz (MHz) or Gigahertz (GHz).
+Register,,A very fast memory location inside the processor.
+General-purpose registers,,These registers are available for the programmer to use in programs to store data temporarily. The term accumulator is sometimes used for general purpose register.
+Program counter,,A register which stores the memory address of the next machine instruction to be fetched and executed.
+Memory address register,,This stores the address of the memory location currently being accessed.
+Memory buffer register,,This stores the data item (or instruction) being transferred to or from the memory location currently being accessed by the processor.
+Current instruction register,,This stores a copy the current instruction both operand and op-code while it is being decoded and executed.
+Status register,,This holds condition codes to indicate the outcome of operations.  E.g. specific bits in the register are set if the result of the last arithmetic operation is positive negative zero or caused overflow.
+Fetch-Execute cycle,,"Fetch:
+ 1)The address of the next instruction to be executed is copied from the program counter into the memory address register.
+ 2) a)The address bus is used to transfer the address from the memory address register to the main memory. The location in the main memory at that address is accessed and the instruction held at that memory address is copied into the memory buffer register using the data bus.
+ 2)b) At the same time the contents of the program counter are incremented so that it holds the address of the next instruction.
+ 3) The contents of the memory buffer register are copied into the current instruction register.
+ Note: 2)a) and 2)b) can happen at the same time because the steps are carried out by different components and the order of execution is unimportant.
+ Decode and Execute
+ The instruction decoder in the control unit decodes the instruction.
+ The instruction held in the CIR is split into the opcode and operand.
+ The opcode identifies the instruction to be performed which will be executed by the relevant part of the processor."
+Interrupt,,"An interrupt is a signal from some device or source seeking the attention of the processor. 
+ When an interrupt signal is received by the processor the program currently being executed is suspended and control is passed to an interrupt service routine. 
+ When the program is suspended its current status (the volatile environment) needs to be saved so that execution of the program can continue once the cause of the interrupt has been dealt with. 
+  Some causes of Interrupts
+ · Power failure
+ · Program error – e.g. arithmetic overflow division by zero
+ · Timer – the real time clock is used to allow the operating system to perform specific tasks at regular intervals.
+ · Input/Ouput – I/O controllers generate signals to indicate completion of data transfer such as when reading data from disk or when a key is pressed on a keyboard. 
+ How Interrupts are dealt with during the fetch-execute cycle
+ After completion of the current fetch-execute cycle if an interrupt has been detected:
+ 1) The contents of the program counter are saved in a stack
+ 2) The contents of all the other registers used by the current program are also saved in a stack.
+ 3) The source of the interrupt is determined
+ 4) Lower priority interrupts are disabled (to stop them interrupting the interrupt)
+ 5) The program counter is loaded with the start address of the relevant interrupt service routine
+ 6) The interrupt service routine is executed
+ Once execution of the ISR has been completed
+ 1) The saved register values (other than the PC) belonging to the interrupted program are copied back into the relevant registers
+ 2) Interrupts are re-enabled
+ 3) The saved value for the program counter is restored to point to the next instruction of the interrupted program to be fetched and executed."
+Processor instruction set,,A processor instruction set is the set of binary codes for the machine operations that a processor has been designed to perform. Each type of processor has its own instruction set.
+Opcode,,The op-code indicates the instruction to be executed. It denotes the basic machine operation e.g. ADD.
+Operand,,An operand is a value that will be used by an operation. The operand can store the actual the actual data item to be used the address of the data item to be used or the name of a register.
+Addressing Mode,,The addressing mode indicates how the value in the operand will be interpreted. The value in the operand will either represent the actual value to be used or a memory address.
+Immediate Address,,In immediate addressing the operand given is the actual data value to be used. There is no need to access the memory. In assembly language the # symbol is used to indicate immediate addressing. E.g.  MOV R2 #20 // means move the number 20 into the register R2.
+Direct Address,,In direct addressing the operand is the memory address of the location either containing the data or where the data is to be stored. Note: memory addresses can be either a number or symbolic (a word). E.g.   LDR R2 20 // means load register R2 with the contents of location 20.
+Multiple cores,,The term core is used to describe the individual processing units that enable instructions to be fetched and executed. Each core is in theory able to process a different instruction at the same time which means that tasks can potentially be run in parallel. (Note: some programs can only be run sequentially). The tasks are split up to make use of the extra cores so that the speed of execution is increased. Using multi-core processors has allowed the overall speeds of computers to increase without having to increase clock speeds. A dual-core processor with a clock speed of 1GHz may obtain speeds close to a single core 2 GHz processor.
+Cache memory,,Cache memory is very fast memory that is built into the CPU and located near to the processor or is located next to the CPU on a separate chip. The CPU attempts to use cache memory to store the next few instructions to be executed in the program and the data or the instructions that are frequently required by the program. Fetching these instructions from cache memory is much quicker than fetching them from main memory which speeds up overall execution of the program.
+Word length,,"A word is a collection of bits that can be addressed and processed simultaneously as a single unit by the CPU. The word length is the number of bits in a word.
+ A processor with a 64 bit word length will generally operate faster than one with a word length of 32 bits as it means that the processor can handle 64 bits in one clock pulse. A larger word size means that the processor can handle more data per instruction can access a larger amount of memory through direct addressing and can have a larger instruction size and hence a larger instruction set.
+ The word length of a computer is normally closely associated with the size of the data bus. Often they are the same size."
+Serial Transmission,,The data bits are transmitted one after another along a single wire.
+Parallel Transmission,,The data bits are transmitted at the same time down parallel wires. Only suitable for short distances (e.g. internal buses) because of problems with crosstalk (interference) and data skew.
+Synchronous transmission,,A transmission system in which the sending device and receiving device are kept synchronized with each other. The sending computer controls the transmission rate. The sender generally provides the clock signal using its system clock. A special line is required for the clock signal.  The data stream is in the form of signals which are accompanied by regular timing signals.
+Asynchronous transmission,,"A transmission system in which the sender and receiver have separate clocks which are not kept synchronised.  Instead the clocks are synchronised temporarily at the start of a transmission.  The arrival of data cannot be predicted by the receiver; a start bit is used to signal the arrival of data and to synchronise the transmitter and receiver temporarily.
+ A stop bit is included at the end of the data which enables the next start bit to be recognised and the time interval for it gives time for the data bits to be dealt with."
+Baud rate,,The number of signal changes per second .
+Bit rate,,The data transmission rate. I.e. the number of bits transmitte per second.
+Bandwidth,,The range of frequencies that a channel can transmit.
+Latency,,The time between something being initiated and its effects being noticed. In terms of data transmission it is the time between the data being transmitted and it being received.
+Protocol,,A set of rules and standards which enable data communication between devices.
+MAC address,,Media Access Control address - a unique address assigned to a network card which enables devices to be identifed on a network.
+Topology,,The shape configuration or structure of the connections that connect device to the network.
+Peer-to-peer networking,,"A network that has no dedicated servers. All computers are of equal status and can both share resources themselves and use resources from other computers i.e. they are peers.
+ Only suitable for networks with up to 10 machines such as a small office or home network but is easy to set up and maintain."
+Client-server networking,,"A client-server or server-based network is a network in which resources security administration and other functions are provided by dedicated servers.
+ Client machines request services from the servers and the servers respond. The servers are more powerful machines than the clients. This type of network is more expensive to set up and maintain than a peer-to-peer network."
+Wireless Network,,Any type of local area network (LAN) in which the nodes (computers or computing devices often portable devices) are not connected by wires but use radio waves to transmit data between them.
+WiFi,,Trademarked IEEE 802.11 technologies that support wireless networking of home and business networks.
+Wireless network adapter/Wireless network interface controller,,"A device that adds wireless connectivity to a laptop or desktop computer. I.e. it enables a computer to connect to a wireless access point and hence a wireless network.
+ The combination of a computer and wireless network adapter is called a station."
+Wireless access point,,"A device that allows wireless devices to connect to a wired network using WiFi or some other related standards. The access point usually connects to a router (via a wired network) as a standalone device but it can also be a component of the router itself. 
+ Note: An access point is not the same as a hotspot. A hotspot is the physical space where the wireless service is provided."
+"WiFi Protected Access
+ WPA/WPA2",,"These are two security protocols and security certification programs used to secure wireless networks which offer greater security than the orignal WEP protocol. 
+ There are two aspects to security of wireless networks -preventing unauthorised users accessing the network and protecting the transmitted data. 
+ Data is transmitted in encrypted form using strong encryption. WPA uses the temporal key integrity protocol (TKIP) which dynamically changes the key that the systems use.  This prevents intruders from creating their own encryption key to match the one used by the secure network.
+ WPA implements something called the Extensible Authentication Protocol (EAP) for authorizing users.  Instead of authorizing computers based solely on their MAC address WPA can use several other methods to verify each computer's identity including a more secure public-key encryption system which makes it more difficult for unauthorized systems to gain access to the wireless network."
+Service Set Identifier - SSID,,This is a locally unique identifier for a wireless network. A wireless client (station) must have the same SSID as the one put in the access point to join. The SSID is often broadcast but doing that publicly announces the wireless network which can be seen as a security weakness.
+MAC address white list,,A list of all the MAC addresses that are permitted to connect to a network. Only a device with a MAC address on the list can connect.
+"Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA) 
+ with and without Request to Send/Clear to send.",,"A protocol used for wireless networks. Data sent around networks are sent in frames. Any device on the network may attempt to send a frame. Only one device can successfully transmit at a time. The data frames can be picked up by any device within range.
+ The CSMA/CA protocol requires that:
+ Ø Before sending a frame the transmitting device checks to see if the transmission medium is free.
+ Ø If it is free the frame is transmitted. If it is busy the transmitting device will wait a random amount of time before checking again. If it is now free the frame can be transmitted.
+ Ø The receiving device transmits an acknowledgement when the frame has been received.
+ Ø If the transmitter does not receive an acknowledgement it will wait a random amount of time before trying to transmit again.
+  
+ CSMA/CA with Request To Send/Clear To Send
+ Ø Before sending a frame the transmitting device checks to see if the transmission medium is free.
+ Ø If it is free a 'Request to send' signal is transmitted to the Wireless Access Point. If it is busy the transmitting device will wait a random amount of time before checking again. If it is now free the 'Request to send' signal can be transmitted.
+ Ø If a 'Clear to send' signal is received from the Wireless Access Point the transmitter sends the frame. If the CTS signal is not received the transmitter will wait before sending the RTS signal again.
+ Ø The receiving device transmits an acknowledgement when the frame has been received.
+ Ø If the transmitter does not receive an acknowledgement it will wait a random amount of time before trying to transmit again.
+  
+ CSMA/CA with RTS/CTS avoids problems that can occur when there are 'hidden nodes' - devices connected to the network that cannot be seen by other devices - as only the Wireless Access Point can tranmit a CTS signal and it can (of course) see all the devices on the network."
+Packet Switching,,Messages to be sent across the network are split into a number of segments called packets. The packets of a message can travel along different paths through a network of routers. Routers are the packet's destination IP address to route the packet taking into account how busy particular routes are.
+Routers,,A device that receives packets or from one host (computer) or router and uses the destination IP address that they contain to pass them correctly formatted to another host (computer) or router.
+Gateway,,A device used to connect networks using different protocols so that information can be successfully passed from one system to another.
+URL,,Uniform resource locator
+FQDN,,Fully-Qualified Domain Name
+DNS,,Domain name server. The Domain system is used to find the IP address associated with a domain.
+Internet Registries,,An Internet registeries is an organisation responsible for registering Internet domains and domain names to people organisations and businesses. They store domain names along with to whom they are registered.
+Firewall,,A firewall is a combination of  hardware and software that isolates an organisation's internal private network from the public Internet. It allows some packets to pass through whilst blocking others.
+Symmetric Encryption,,"An encryption method which uses the same key to encrypt and decrypt messages. A problem with this method of encryption is how to exchange keys securely. 
+ Symmetric encryption is widely used when processing transcations over the Internet. A secure channel is first esatblished using assymetric encryption. This channel is used to distribute a temporary symmetric encryption key known as a session key which is used to encrypt transaction data such as credit card details."
+Asymmetric encryption,,"Two different but related keys are used. One to encrypt the other to decrypt. Sometimes know as public/private key encryption.
+ E.g. when sending an encrypted email the message is encrypted using the recipient's public key.
+ It is decrypted using the recipient's private key."
+Digital certificates & signatures,,"A digital certificate is a file containing information about the owner of a website and the public half of an asymmetric key pair. A certification authority signs the certificate to confirm that the information in the certificate is correct.
+ A digital signature is a way of verifying that an email or other document has been sent by the person claiming to send it and that the contents have not been altered. A message digest (or hash) of the document is produced from its content. This hash is encrypted using the sender's private key. This is the digital signature. It is decrypted using the sender's public key. Only the sender's public key will be able to decrypt it. The hash is regenerated from the received document and compared to the received hash. If they differ the document must has been altered."
+Viruses worms and Trojans,,"A virus is a small program attached to another program or data file. It replicates itself by attaching itself to other programs. It will execute when the program it is attached to is running or the document it is attached to is opened. 
+ A worm is a small program that exploits a network security weakness to replicate itself through computer networks. The worm usually performs malicious actions such as using up computer time drastically increasing network traffic and possibly shutting the system down. It may also attack computers and servers of the networks it moves through.
+ A Trojan is a destructive program that masquerades as a benign application such as a utility or a game though they can also be distributed through e-mail attachments.
+ Unlike viruses Trojan horses do not replicate themselves but they can be just as destructive.  
+ One of the most insidious types of Trojan horse is a program that claims to rid your computer of viruses but instead introduces viruses onto your computer. One of the most common types of Trojan creates a backdoor to the attacked computer which gives the criminal access to it and any data held on it."
+TCP/IP protocol stack,,"The TCP/IP protocol stack has four layers. Each layer has a different responsibility. Data is passed between the layers to enable communication. 
+ The Application layer is the highest layer in that it is closest to the user. The role of the application layer is to interact with the user via the appropriate application software. It handles the details of the particular networking application and defines the kind of messages to send. It gives the application access to the network. It selects a different protocol depending on the application trying to access the network e.g. HTTP for web browsing. 
+ The Transport Layer (TCP) enables applications running on the two hosts to establish a two-way connection and exchange application-layer messages through a reliable data channel. It establishes a connection between the two end-points and ensures a reliable flow of data between the end-points. It divides the data passed to it from the application layer into packets called TCP segments for the network layer below to handle. Each packet is given a sequence number so that the data can be reassembled by the transport layer at the destination. It adds a header to the packets containing the source and destination port numbers before passing the packets onto the Network layer. It deals with problems of connecting hosts. It monitors the connection for transmission errors and responds when an error is detected by retransmitting the appropriate packet. 
+ When the packets are received by the destination host the transport layer acknowledges receipt of the packets. It strips off the port numbers from the packets and reassembles them in the correct order to reconstruct the message. It uses the port numbers to route the message to the correct application layer server or client. 
+ The Network Layer (IP) adds a header to the packets which contains the source and destination IP addresses then hands the packets onto the link layer. The addition of an IP address to the port number forms a socket. It is responsible for specifying the routing of packets around the network. It is concerned with getting the packet to the correct location as passed on to it from the Transport Layer. It determines which host (e.g. router) to send the packet to next using the destination IP address. 
+ The Network layer also receives packets from the link layer removes the source and destination IP addresses then passes the packets to the transport layer. 
+ The Link Layer deals with the physical connections between the devices. It receives packets from the Network layer and adds the source and destination MAC (Media Access Control or hardware) addresses to these packets then despatches the packets onto the local cable. Initially the destination address is the gateway’s MAC address. The gateway is the host to which the sending host is directly connected and which is also connected to the Internet. At the gateway the source MAC address is changed to that of the gateway and the destination MAC address is changed to that of the next link in the path to the ultimate destination. This process is repeated as the packets are passed from device to device. The link layer moves the packets between the internet hosts."
+FTP (Client/server),,File transfer protocol – an application layer protocol that enables files on one host to be copied onto another host.
+HTTP,,Hypertext Transfer Protocol - used when accessing web pages.
+HTTPs,,HyperText Transfer Protocol secure - used when accessing secure web pages e.g. when making a transaction such as a purchase.
+POP3,,Protocol used to retrieve email.
+SMTP,,Protocol used to send email.
+SSH (secure shell),,Protocol used for encrypted communication between two computers on a TCP/IP network. Often used for remote-login and manganging netowrks remotely.
+DHCP (Dynamic Host Configuration Protocol),,This protocol automatically assigns a dynamic IP address from a pool of available addresses to a computer attempting to operate on a network. When a client wishes to join a TCP/IP network it sends out a request to find a DHCP server. A DHCP server receiving such a request replies with an offer message which contains the proposed IP address for the client the network mask and other configuration details. The client machine accepts the offer by echoing the offer details back to the DHCP server.
+NAT (Network Address Translation),,"Network Address Translation is used to convert private IP addresses into public IP addresses as they pass through the router to enable packets to be routed on the Internet.
+ NAT is needed because the private IP addresses used on a LAN are non-routable and so cannot be used for routing on the Internet. Also the private IP addresses are not unique and so cannot be used by the host to return data."
+Port forwarding,,Port forwarding is a product of NAT when a public computer is trying to communicate with a server operating within a private network. Since there is no direct connection to the server the NAT needs to forward all incoming requests to a particular IP address and port (e.g. web requests on port 80) to port 80 of the internal web server using a private address. Requests to access the internal server would be sent to the IP address of the external router which can be programmed to filter out packets destined for certain computers or applications.
+Client-Server model,,E.g. a client machine running a web browser may request a web page or other web-based resource from a web server. The web browser uses HTTP to fetch web pages from a web server by sending a request message. The web server listens on port 80 for such requests. The web server uses HTTP to respond with a response message containing a web page or resource. The response message goes back to the web browser via the port that sent the request message.
+API (Application programming interface),,An API separates the data from the operations that may act on the data. Applications that use a particular API do not know how the data is stored only how to access it via API calls.
+Websocket,,"The Websocket specification defines an API which allows the creation of a persistent bi-directional communication channel through a single socket between a web browser and a server over TCP. The channel provides full duplex communication which means that data can be sent in both directions at the same time. Once the connection has been made both the client and the server can start sending data at any time.
+ WebSocket packets are greatly reduced in size as they use a fraction of the usual header information. All packets sent via a WebSocket are automatically accepted at either end without the normal need for security checks. Keeping the connection open enables super-fast real time and interactive communication as used in multiplayer gaming and instant messaging."
+CRUD and REST,,"The acronym CRUD is used to refer to the four basic database or content management operations (Create Retrieve Update and Delete). The commands corresponding to these operations in SQL are INSERT SELECT UPDATE and DELETE. INSERT adds new records SEL ECT retrieves or selects existing records based on selection conditions UPDATE modifies existing records and DELETE removes tables or records. 
+ REST is a style of systems design that prescribes the use of HTTP request methods to interact with online databases via a web server. The application data can be queried and changed using HTTP methods and URLs. The client computer requires no knowledge of how the server is likely to fulfil the request how the data or resource is stored or from where it will gather the data. This separation allows any client or server to be updated and developed independently of each other without any loss of function."
+JSON and XML,,"JSON and XML are two alternative standard methods for formatting data objects that are transferred between servers and web applications. XML is a mark-up language that was designed to store and transport data. It is similar to HTML in that both contain mark-up symbols to describe file contents. XML data is known as self-describing meaning that the structure of the data is embedded with the data. 
+ JSON is also a simple text-based way to store and transmit structured data. Using JSON it is possible to store anything from a single number through to strings arrays and objects using nothing but a string of plain text. JSON describes data using object/value pairs (similar to dictionaries)."
+Thick and Thin Client,,A thin client network is a network where all processing takes place in a central server and the clients are dumb terminals with little or no processing power. A thick client network is a network where the applications are run in the client workstations. This means that the client workstations must have local processing power.
+Attribute,,A property of a record.
+Primary Key,,An attribute that uniquely identifies one record in a table.
+Composite Primary key,,A combination of attributes that uniquely identifies one record. Used when no single attribute uniquely identifies one record.
+Foreign key,,An attribute in a table which is the primary key in a different table. Used to link related records in the two tables.
+Third normal form and why databases are normalised,,"A database is in third normal form if: there are no repeating groups of attributes there are no partial key dependencies and no non-key dependencies.
+ Databases are normalised to minimise data duplication/to eliminate data redundancy to ensure data consistency and to avoid update anomalies"
+Big Data,,"The term Big Data is used to define data that can't be processed or analysed using traditional methods. 
+ There are three features of big data that cause this.
+ 1) Volume of data. The amount of data to be processed is too big to fit on a single server. Data analysis scenarios that process hundreds of terabytes or petabytes fall into Big Data category if that data must be analysed in a single set.
+ 2) Velocity of generation/processing. The data is generated very quickly and must be processed very quickly. If data is at rest it can be batch processed e.g. in billing systems but if data is in motion as in streaming systems it must be processed in real-time.
+ 3) Variety of data. The data is in many different forms such as structured semi-structured unstructured text and multimedia."
+Function domain and co-domain,,A function is a rule that for each element some set A of inputs assigns an output chosen from a set B without necessarily using every member of B. The set from which the inputs are chosen is called the domain and the set from which the outputs are calculated is the co-domain.
+First class object,,A first-class object (or value) is an object which may: appear in an expression be assigned to a variable be assigned as an argument to a function be returned by a function call.
+Function application,,The process of giving particular inputs to a function is called function application. For example square 3 represents the application of the function square to the integer argument 3.
+Partial functional application,,"Partial Function Application means that it is possible to call a function with fewer arguments than is needed and store its state as a variable for later use. 
+ Example. sum(xy) = x + y. The function is applied to one of its arguments – e.g. sum(6y). The output of this function application is a new function sum(6y) = 6+y. 
+ The new function will always add 6 to the one argument (y)."
+Composition of functions,,"The operation functional composition combines two functions to get a new function.
+ E.g. If the domain and co-domains of f and g are ℝ and f(x) = (x+2) and g(y)=y2 
+ then g° f=(x+2)2.
+ The function f is applied first and then the function g is applied to result returned by f."
+Higher order functions,,A higher order function is one that either has a function as a parameter returns a function or both.
+Map,,"The map function applies a given function to each element of a list returning a list of results.
+ E.g. if treble x = 3*x and numbers=[2 3 8] then
+ map treble numbers would produce [6 9 24]"
+Filter,,"The filter function processes a data structure in order to produce a new data structure containing only those elements that match a given condition.
+ E.g. filter (>2) numbers would produce [3 8]"
+Reduce/Fold,,"The fold function reduces a list of values to a single value by repeatedly applying a combining function to the list values. In the folding process the combining function e.g. sum is applied to the list element by element returning something such as the total sum of all the elements. 
+ E.g. fold (-) 4 numbers would produce -9 i.e. (((4-2)-3)-8)"
